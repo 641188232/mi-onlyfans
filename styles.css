@@ -1,45 +1,39 @@
-/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    text-align: center;
+    padding: 50px;
 }
 
-header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
+#container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
-h1 {
-  margin: 0;
+input, button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
 }
 
-main {
-  padding: 20px;
+button {
+    background: #ff4b2b;
+    color: white;
+    cursor: pointer;
 }
 
-section {
-  margin: 20px 0;
-  padding: 15px;
-  background-color: white;
-  border-radius: 8px;
+button:hover {
+    background: #ff1e56;
 }
 
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+a {
+    color: yellow;
+    font-weight: bold;
 }
