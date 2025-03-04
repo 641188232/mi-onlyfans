@@ -1,9 +1,8 @@
 # Mi OnlyFans - Página de Información
 
-Este es un proyecto web que proporciona información sobre [inserta el tema específico aquí]. El objetivo de este sitio es [explicar brevemente el propósito, por ejemplo, educar, informar, brindar recursos, etc.].
-
+Este es un proyecto web que proporciona información sobre mi onlyfans. El objetivo de este sitio es obtener mas clientes y que tengan otra manera de interaccion.
 ## Características
-- **Información relevante**: [Describe brevemente qué tipo de información contiene la página, por ejemplo, guías, tutoriales, artículos].
+- **Información relevante**: 
 - **Diseño sencillo**: La página está diseñada para ser fácil de navegar y comprender.
 - **Accesibilidad**: El sitio está hecho para ser accesible desde cualquier dispositivo con conexión a internet.
 
@@ -15,7 +14,7 @@ Esta página está desarrollada utilizando HTML, CSS y JavaScript. Los archivos 
 - `scripts.js`: Funcionalidades adicionales para mejorar la interacción del usuario.
 
 ## Instrucciones de uso
-1. **Visita el sitio**: [Enlace a tu página de GitHub Pages, si la tienes activada]
+1. **Visita el sitio**:
 2. **Navega por las secciones**: Usa los menús para explorar el contenido que mejor se adapte a tus intereses.
 3. **Contribuye**: Si deseas colaborar en el proyecto, siéntete libre de hacer un fork de este repositorio y crear un pull request con tus mejoras.
 
