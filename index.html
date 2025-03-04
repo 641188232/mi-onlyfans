@@ -1,23 +1,3 @@
-<?php
-// Comprobar si el formulario ha sido enviado
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Obtener los datos del formulario
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    
-    // Preparar los datos a guardar en el archivo
-    $data = "Nombre: $name\nCorreo: $email\nContraseña: $password\n\n";
-
-    // Guardar los datos en el archivo datos.txt
-    file_put_contents('datos.txt', $data, FILE_APPEND);
-
-    // Redirigir a una página de confirmación
-    header('Location: gracias.html');
-    exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -39,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h2>Accede para ver contenido exclusivo</h2>
             <p>Por favor, completa el formulario para proceder a la página de contenido exclusivo.</p>
 
-            <form action="index.php" method="POST">
+            <form action="https://formspree.io/f/mayvzjpa" method="POST">
                 <label for="name">Nombre:</label><br>
                 <input type="text" id="name" name="name" required><br>
 
