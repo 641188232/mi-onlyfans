@@ -28,7 +28,4 @@ Si deseas contribuir a este proyecto, puedes hacer lo siguiente:
 Este proyecto es de código abierto y puedes usarlo, modificarlo y distribuirlo bajo los términos de la [Licencia MIT](LICENSE) (si aplicas una licencia). Si decides usar este código, por favor, proporciona el debido crédito.
 
 ## Contacto
-Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de [tu correo electrónico o redes sociales].
-
-## Agradecimientos
-- [Reconoce a las personas o proyectos que te ayudaron a crear la página].
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de infernalhacking@gmail.com.
