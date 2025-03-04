@@ -32,8 +32,3 @@ button {
 button:hover {
     background: #ff1e56;
 }
-
-a {
-    color: yellow;
-    font-weight: bold;
-}
