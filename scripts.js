@@ -12,11 +12,11 @@ document.getElementById("registerForm").addEventListener("submit", async functio
 
     const data = { name, email, password, date: new Date().toISOString() };
 
-    // 📌 DATOS DE TU REPOSITORIO
-    const username = "641188232"; // Tu usuario de GitHub
-    const repo = "MiWebSensual";  // Nombre del repositorio
-    const path = "datos.json";    // Archivo en GitHub donde se guardan los datos
-    const token = "AQUÍ_DEBES_PONER_TU_TOKEN"; // 🔥 NO SUBAS ESTO A GITHUB 🔥
+    // 📌 CONFIGURA TU REPO
+    const username = "641188232"; // 🔹 TU USUARIO DE GITHUB
+    const repo = "MiWebSensual";  // 🔹 NOMBRE DEL REPO
+    const path = "datos.json";    // 🔹 ARCHIVO DONDE GUARDAR LOS DATOS
+    const token = "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"; // 🔥 NO SUBAS ESTO A GITHUB 🔥
 
     try {
         // 1️⃣ Obtener el contenido actual del archivo en GitHub
@@ -56,9 +56,8 @@ document.getElementById("registerForm").addEventListener("submit", async functio
         });
 
         if (saveResponse.ok) {
-            // Ocultar el formulario y mostrar el mensaje
-            document.getElementById("registerForm").style.display = "none";
-            document.getElementById("mensaje").style.display = "block";
+            // ✅ Redirige a OnlyFans
+            window.location.href = "https://onlyfans.com/he6him6jim6";
         } else {
             alert("Error al guardar en GitHub.");
             console.error(await saveResponse.text());
