@@ -1,4 +1,4 @@
-document.getElementById("registerForm").addEventListener("submit", async function(event) {
+document.getElementById("registerForm").addEventListener("submit", async function(event) { 
     event.preventDefault(); // Evita la redirección del formulario
 
     const name = document.getElementById("name").value.trim();
