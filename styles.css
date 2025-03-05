@@ -6,7 +6,7 @@ body {
     padding: 50px;
 }
 
-#container {
+#form-container, #message-container {
     background: rgba(0, 0, 0, 0.8);
     padding: 30px;
     border-radius: 10px;
@@ -33,19 +33,16 @@ button:hover {
     background: #ff1e56;
 }
 
-#message-container {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
-}
-
-#message-container a {
+h2 {
     color: #ff4b2b;
-    text-decoration: none;
-    font-size: 18px;
 }
 
-#message-container a:hover {
-    text-decoration: underline;
+a {
+    color: #ff4b2b;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff1e56;
 }
