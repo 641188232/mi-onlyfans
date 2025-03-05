@@ -15,7 +15,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
 
     // 📌 Datos de tu repositorio de GitHub
     const username = "641188232";  // Tu usuario de GitHub
-    const repo = "TU-REPO";        // Nombre de tu repositorio
+    const repo = "mi-onlyfans";        // Nombre de tu repositorio
     const path = "datos.json";     // Archivo donde se guardan los datos
     const token = "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";      // Token de GitHub (⚠️ No lo subas al código)
 
