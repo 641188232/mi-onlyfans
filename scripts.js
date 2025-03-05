@@ -1,10 +1,11 @@
 document.getElementById("registerForm").addEventListener("submit", async function(event) {
-    event.preventDefault(); // Evita la redirección
+    event.preventDefault(); // Evita la redirección del formulario
 
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
 
+    // Validación
     if (!name || !email || !password) {
         alert("Por favor, completa todos los campos.");
         return;
@@ -12,11 +13,12 @@ document.getElementById("registerForm").addEventListener("submit", async functio
 
     const data = { name, email, password, date: new Date().toISOString() };
 
-    // 📌 DATOS DE TU REPOSITORIO
+    // 📌 Datos de tu repositorio de GitHub
     const username = "641188232";  // Tu usuario de GitHub
     const repo = "TU-REPO";        // Nombre de tu repositorio
     const path = "datos.json";     // Archivo donde se guardan los datos
-    const token = "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";      
+    const token = "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";      // Token de GitHub (⚠️ No lo subas al código)
+
     try {
         // 1️⃣ Obtener el contenido actual del archivo en GitHub
         let response = await fetch(`https://api.github.com/repos/${username}/${repo}/contents/${path}`, {
@@ -52,8 +54,8 @@ document.getElementById("registerForm").addEventListener("submit", async functio
 
         if (saveResponse.ok) {
             alert("Registro guardado en GitHub correctamente.");
-            
-            // Ocultar formulario y mostrar mensaje con el enlace de OnlyFans
+
+            // Ocultar el formulario y mostrar el mensaje con el enlace
             document.getElementById("form-container").style.display = "none";
             document.getElementById("message-container").style.display = "block";
         } else {
