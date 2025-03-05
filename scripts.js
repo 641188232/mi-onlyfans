@@ -1,4 +1,4 @@
-document.getElementById("registerForm").addEventListener("submit", async function(event) { 
+document.getElementById("registerForm").addEventListener("submit", async function(event) {
     event.preventDefault(); // Evita la redirección del formulario
 
     const name = document.getElementById("name").value.trim();
@@ -56,8 +56,8 @@ document.getElementById("registerForm").addEventListener("submit", async functio
             alert("Registro guardado en GitHub correctamente.");
 
             // Ocultar el formulario y mostrar el mensaje con el enlace
-            document.getElementById("form-container").style.display = "none";
-            document.getElementById("message-container").style.display = "block";
+            document.getElementById("form-container").style.display = "none";  // Ocultar formulario
+            document.getElementById("message-container").style.display = "block";  // Mostrar mensaje
         } else {
             alert("Error al guardar en GitHub.");
             console.error(await saveResponse.text());
